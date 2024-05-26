@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Andes-Contacto</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html" class="logo" alt="Logo de Andes">
+                <img src="../img/Logo-tienda.png" >
+                <h2 class="nombre-tienda">Andes</h2>
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html" class="nav">Inicio</a>
+            <a href="./Indumentaria.html" class="nav">Indumentaria</a>
+            <a href="./Sobre_nosotros.html" class="nav">Sobre Nosotros</a>
+            <a href="./Contacto.html" class="nav">Contacto</a>
+            <a href="./Tiendas.html" class="nav">Tiendas</a>
+        </nav>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Contactanos</legend>
+            <label for="Nombre">Nombre</label>
+            <input id="Nombre" type="text" size="30" name="firstname"  required>
+            <br><br>
+            <label for="Apellido">Apellido</label>
+            <input id="Apellido" type="text" size="30" name="Lastname"  required>
+            <br><br>
+            <label for="Correo">Email</label>
+            <input id="Correo" type="email" size="30" name="Email"  required>
+            <br><br>
+            <label for="tipo_doc">Tipo de documento</label>
+                <select id="tipo_doc" name="type_id" >
+                    <option value="DNI">DNI</option>
+                    <option value="CUIT">CUIT</option>
+                    <option value="Pasaporte">PARG</option>
+                </select>
+            <br><br>
+            <label for="Documento">Documento</label>
+            <input id="Documento" type="text" size="30" name="id" >
+            <br><br>
+            <label for="telefono">Telefono</label>
+            <input id="telefono" type="tel" name="telefono" required>
+            <br><br>
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input id="fecha" type="date" name="birthdate">
+            <br><br>
+            <label for="Mensaje">Mensaje</label>
+            <br>
+            <textarea id="Mensaje" name="message" rows="5" cols="30"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+</body>
+</html>

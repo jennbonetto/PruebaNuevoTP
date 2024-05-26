@@ -1,0 +1,25 @@
+let cart = [];
+
+function agregarProducto() {
+    let producto = {
+        nombre: "Producto prueba",
+        precio: 10
+    };
+
+    cart.push(producto);
+
+    mostrarCarrito();
+}
+
+function mostrarCarrito() {
+    let cartElement = document.getElementById("cart");
+    cartElement.innerHTML = "";
+
+    cart.forEach(producto => {
+        let productoElement = document.createElement("div");
+        productoElement.innerHTML = `
+            <p>${producto.nombre} - $${producto.precio}</p>
+        `;
+        cartElement.appendChild(productoElement);
+    });
+}
